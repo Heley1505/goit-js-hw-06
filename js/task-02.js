@@ -18,6 +18,6 @@ const ingredientRef = ingredients.map(element => {
 
 listRef.append(...ingredientRef);
 
-  console.log(itemRef);
+
 
 
