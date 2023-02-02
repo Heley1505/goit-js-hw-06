@@ -12,3 +12,13 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+const list = document.querySelector('.gallery');
+const elements = images.map(image => `<li><img src = "${image.url}" alt =" ${image.alt} width = "200" height = "200"></li>`).join('');
+
+list.insertAdjacentHTML("beforeend", elements);
+
+
+list.style.display = "flex";
+list.style.backgroundColor = "teal";
+list.style.listStyle = "none";
+list.style.justifyContent = "space-around";
